@@ -1,0 +1,30 @@
+{
+  "name": "tooltippy",
+  "version": "1.0.0",
+  "description": "💬 Graceful CSS-only tooltips in <1kb.",
+  "license": "MIT",
+  "repository": "alcidesqueiroz/tooltippy",
+  "author": {
+    "name": "Alcides Queiroz",
+    "email": "alcidesqueiroz@gmail.com",
+    "url": "alcidesqueiroz.github.com"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "build-expanded-dist": "stylus src/index.styl dist/tooltippy.css",
+    "build-debug-dist": "stylus --sourcemap src/index.styl dist/tooltippy.css",
+    "build-min-dist": "stylus --compress src/index.styl dist/tooltippy.min.css",
+    "build": "build-expanded-dist && build-debug-dist && build-min-dist",
+    "test":
+  },
+  "keywords": [
+    "tooltips",
+    "hints",
+    "CSS-only",
+    "graceful",
+    "tiny",
+    "micro"
+  ]
+}
