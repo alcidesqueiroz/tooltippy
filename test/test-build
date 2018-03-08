@@ -1,0 +1,24 @@
+#!/bin/bash
+
+test_build()
+{
+  local test_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+  local project_dir="$(dirname ${test_dir})"
+  local expanded_file="${project_dir}/dist/tooltippy.css"
+  local debug_file="${project_dir}/dist/tooltippy.debug.css"
+  local debug_map_file="${project_dir}/dist/tooltippy.debug.css.map"
+  local min_file="${project_dir}/dist/tooltippy.min.css"
+
+  npm run build
+
+  if [ -e ${expanded_file} ] && [ -e ${debug_file} ] && [ -e ${debug_map_file} ] && [ -e ${min_file} ]
+  then
+    echo success
+    exit 0
+  else
+    echo error
+    exit 1
+  fi
+}
+
+test_build
