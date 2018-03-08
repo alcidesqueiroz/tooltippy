@@ -13,11 +13,17 @@
     "node": ">=6"
   },
   "scripts": {
-    "build-expanded-dist": "stylus src/index.styl dist/tooltippy.css",
-    "build-debug-dist": "stylus --sourcemap src/index.styl dist/tooltippy.css",
-    "build-min-dist": "stylus --compress src/index.styl dist/tooltippy.min.css",
-    "build": "build-expanded-dist && build-debug-dist && build-min-dist",
-    "test":
+    "clean": "rm -rf dist",
+    "build-expanded": "stylus src/index.styl --out dist/tooltippy.css",
+    "build-debug": "stylus --sourcemap src/index.styl --out dist/tooltippy.debug.css",
+    "build-min": "stylus --compress src/index.styl --out dist/tooltippy.min.css",
+    "prefixify-expanded": "postcss dist/tooltippy.css -u autoprefixer -r",
+    "prefixify-debug": "postcss dist/tooltippy.debug.css -u autoprefixer -r",
+    "prefixify-min": "postcss dist/tooltippy.min.css -u autoprefixer -r",
+    "prefixify-all": "npm run prefixify-expanded && npm run prefixify-debug && npm run prefixify-min",
+    "build-all": "npm run build-expanded && npm run build-debug && npm run build-min",
+    "build": "npm run clean && mkdir dist && npm run build-all && npm run prefixify-all",
+    "test": "test/test-build"
   },
   "keywords": [
     "tooltips",
@@ -26,5 +32,10 @@
     "graceful",
     "tiny",
     "micro"
-  ]
+  ],
+  "devDependencies": {
+    "autoprefixer": "^8.1.0",
+    "postcss-cli": "^5.0.0",
+    "stylus": "^0.54.5"
+  }
 }
