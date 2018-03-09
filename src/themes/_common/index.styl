@@ -66,6 +66,12 @@ triangle(side, color) {
     triangle(top, tooltip-triangle-color);
     margin-bottom: -1rem;
   }
+
+  &:hover{
+    &:before, &:after{
+      bottom: 100%;
+    }
+  }
 }
 
 .tooltippy--right{
@@ -76,6 +82,12 @@ triangle(side, color) {
   &:before{
     triangle(right, tooltip-triangle-color);
     margin-left: -1rem;
+  }
+
+  &:hover{
+    &:before, &:after{
+      left: 100%;
+    }
   }
 }
 
@@ -88,6 +100,12 @@ triangle(side, color) {
     triangle(bottom, tooltip-triangle-color);
     margin-top: -1rem;
   }
+
+  &:hover{
+    &:before, &:after{
+      top: 100%;
+    }
+  }
 }
 
 .tooltippy--left{
@@ -98,5 +116,11 @@ triangle(side, color) {
   &:before{
     triangle(left, tooltip-triangle-color);
     margin-right: -1rem;
+  }
+
+  &:hover{
+    &:before, &:after{
+      right: 100%;
+    }
   }
 }
