@@ -118,7 +118,7 @@
   z-index: 1;
 }
 .tooltippy:after {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;
   color: #fff;
   background-color: #000;
   padding: 0.7rem 1.2rem;
