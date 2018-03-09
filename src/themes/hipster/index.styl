@@ -1,13 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500');
-@import './color-scheme.styl';
+@import url('https://fonts.googleapis.com/css?family=Raleway:500');
+@import './variables.styl';
 @import '../_common/index.styl';
-
-opposite-side = {
-  right: left,
-  left: right,
-  top: bottom,
-  bottom: top
-};
 
 .tooltippy{
   &:before, &:after{
@@ -17,11 +10,13 @@ opposite-side = {
   }
 
   &:after{
-    font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;
+    font-family: 'Raleway', 'Open Sans', 'Segoe UI', Tahoma, sans-serif;
     color: tooltip-forecolor;
     background-color: tooltip-bgcolor;
-    padding: 0.7rem 1.2rem;
+    padding: 1rem 1.8rem;
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 500;
+    border-radius: 2rem;
+    text-shadow: 0 0 0.2rem darken(tooltip-bgcolor, 40%);
   }
 }

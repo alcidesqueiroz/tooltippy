@@ -20,6 +20,8 @@ triangle(side, color) {
 
 .tooltippy{
   &:before, &:after{
+    opacity: 0;
+    pointer-events: none;
     z-index: 1;
     transition: opacity 220ms ease,
                 top 220ms ease,
@@ -64,7 +66,7 @@ triangle(side, color) {
 
   &:before{
     triangle(top, tooltip-triangle-color);
-    margin-bottom: -1rem;
+    margin-bottom: arrow-adjustment;
   }
 
   &:hover{
@@ -81,7 +83,7 @@ triangle(side, color) {
 
   &:before{
     triangle(right, tooltip-triangle-color);
-    margin-left: -1rem;
+    margin-left: arrow-adjustment;
   }
 
   &:hover{
@@ -98,7 +100,7 @@ triangle(side, color) {
 
   &:before{
     triangle(bottom, tooltip-triangle-color);
-    margin-top: -1rem;
+    margin-top: arrow-adjustment;
   }
 
   &:hover{
@@ -115,7 +117,7 @@ triangle(side, color) {
 
   &:before{
     triangle(left, tooltip-triangle-color);
-    margin-right: -1rem;
+    margin-right: arrow-adjustment;
   }
 
   &:hover{

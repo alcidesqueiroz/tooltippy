@@ -1,21 +1,8 @@
 // @import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
-@import './color-scheme.styl';
+@import './variables.styl';
 @import '../_common/index.styl';
 
-opposite-side = {
-  right: left,
-  left: right,
-  top: bottom,
-  bottom: top
-};
-
 .tooltippy{
-  &:before, &:after{
-    opacity: 0;
-    pointer-events: none;
-    z-index: 1;
-  }
-
   &:after{
     font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;
     color: tooltip-forecolor;
