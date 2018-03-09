@@ -15,7 +15,7 @@
   "scripts": {
     "clean": "rm -rf dist",
     "build-expanded": "stylus src/themes/${THEME}/index.styl --out dist/tooltippy--${THEME}.css",
-    "build-debug": "stylus src/themes/${THEME}/index.styl --out dist/tooltippy--${THEME}.debug.css --sourcemap",
+    "build-debug": "stylus -w src/themes/${THEME}/index.styl --out dist/tooltippy--${THEME}.debug.css --sourcemap",
     "build-min": "stylus src/themes/${THEME}/index.styl --out dist/tooltippy--${THEME}.min.css --compress",
     "prefixify-expanded": "postcss dist/tooltippy--${THEME}.css -u autoprefixer -r",
     "prefixify-debug": "postcss dist/tooltippy--${THEME}.debug.css -u autoprefixer -r",

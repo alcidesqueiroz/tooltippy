@@ -1,0 +1,102 @@
+opposite-side = {
+  right: left,
+  left: right,
+  top: bottom,
+  bottom: top
+};
+
+triangle(side, color) {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  border-width: 1rem;
+  border-style: solid;
+  border-{opposite-side[side]}-width: 0;
+  border-color: transparent;
+  border-{side}-color: color;
+}
+
+.tooltippy{
+  &:before, &:after{
+    z-index: 1;
+    transition: opacity 220ms ease,
+                top 220ms ease,
+                right 220ms ease,
+                bottom 220ms ease,
+                left 220ms ease;
+  }
+
+  &:after{
+    content: attr(data-tooltippy);
+    position: absolute;
+    white-space: nowrap;
+  }
+
+  &:hover{
+    &:before, &:after{
+      opacity: 1;
+    }
+  }
+}
+
+.tooltippy--top,
+.tooltippy--bottom{
+  &:before, &:after{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.tooltippy--left,
+.tooltippy--right{
+  &:before, &:after{
+    top: 50%;
+    transform: translateY(-50%)
+  }
+}
+
+.tooltippy--top{
+  &:before, &:after{
+    bottom: calc(100% - 2rem);
+  }
+
+  &:before{
+    triangle(top, tooltip-triangle-color);
+    margin-bottom: -1rem;
+  }
+}
+
+.tooltippy--right{
+  &:before, &:after{
+    left: calc(100% - 2rem);
+  }
+
+  &:before{
+    triangle(right, tooltip-triangle-color);
+    margin-left: -1rem;
+  }
+}
+
+.tooltippy--bottom{
+  &:before, &:after{
+    top: calc(100% - 2rem);
+  }
+
+  &:before{
+    triangle(bottom, tooltip-triangle-color);
+    margin-top: -1rem;
+  }
+}
+
+.tooltippy--left{
+  &:before, &:after{
+    right: calc(100% - 2rem);
+  }
+
+  &:before{
+    triangle(left, tooltip-triangle-color);
+    margin-right: -1rem;
+  }
+}

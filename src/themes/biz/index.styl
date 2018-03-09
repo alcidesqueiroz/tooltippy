@@ -1,3 +1,73 @@
-body{
-  background-color: red;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500');
+@import './color-scheme.styl';
+@import '../_common/index.styl';
+
+opposite-side = {
+  right: left,
+  left: right,
+  top: bottom,
+  bottom: top
+};
+
+.tooltippy{
+  &:before, &:after{
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  &:after{
+    font-family: 'Open Sans';
+    color: tooltip-forecolor;
+    background-color: tooltip-bgcolor;
+    padding: 0.7rem 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+}
+
+.tooltippy--top,
+.tooltippy--bottom{
+  &:before, &:after{
+
+  }
+}
+
+.tooltippy--left,
+.tooltippy--right{
+  &:before, &:after{
+
+  }
+}
+
+.tooltippy--top{
+  &:hover{
+    &:before, &:after{
+      bottom: 100%;
+    }
+  }
+}
+
+.tooltippy--right{
+  &:hover{
+    &:before, &:after{
+      left: 100%;
+    }
+  }
+}
+
+.tooltippy--bottom{
+  &:hover{
+    &:before, &:after{
+      top: 100%;
+    }
+  }
+}
+
+.tooltippy--left{
+  &:hover{
+    &:before, &:after{
+      right: 100%;
+    }
+  }
 }
