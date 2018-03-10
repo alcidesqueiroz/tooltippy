@@ -21,9 +21,9 @@ $ yarn add tooltippy
 
 1. Pick one of the available themes (you can see animated previews below);
 2. Import your theme's stylesheet (from inside the `/dist` folder). Naturally, the recommended format for production is the minified one, but expanded and debug versions are available for each theme too;
-3. In your target element, set the `data-tooltippy` value to the text you want to show;
-4. Add the `tooltippy` class to your target element;
-5. Define the position of your tooltip by using one of the existing direction classes (`tooltippy--top`, `tooltippy--left`, `tooltippy--bottom` and `tooltippy--right`);
+3. In your target element, set the value of the `data-tooltippy` attribute to the text you want to show;
+4. Add the `.tooltippy` class to your target element;
+5. Define the position of your tooltip by using one of the existing direction classes (`.tooltippy--top`, `.tooltippy--left`, `.tooltippy--bottom` and `.tooltippy--right`);
 6. **Optional step**: If you want, you can import the suggested font-face for the theme you have chosen. All theme stylesheets have font-stacks with similar web-safe font-families as fallback.
 
 
