@@ -1,1 +1,2 @@
+install: npm i -g stylus && npm i -g postcss-cli && npm i -g autoprefixer
 script: "./test/test-build"
