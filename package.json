@@ -24,7 +24,8 @@
     "postbuild-all": "npm run prefixify-expanded && npm run prefixify-min && npm run prefixify-debug",
     "prebuild": "npm run clean && mkdir dist",
     "build": "for z in biz high-contrast hipster translucid; do (export THEME=\"${z}\" && npm run build-all); done",
-    "test": "test/test-build"
+    "lint": "stylint .",
+    "test": "npm run lint && test/test-build"
   },
   "keywords": [
     "tooltips",
@@ -37,6 +38,7 @@
   "devDependencies": {
     "autoprefixer": "^8.1.0",
     "postcss-cli": "^5.0.0",
+    "stylint": "^1.5.9",
     "stylus": "^0.54.5"
   }
 }

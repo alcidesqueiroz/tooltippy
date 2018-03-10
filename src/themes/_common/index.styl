@@ -23,11 +23,7 @@ triangle(side, color) {
     opacity: 0;
     pointer-events: none;
     z-index: 1;
-    transition: opacity 220ms ease,
-                top 220ms ease,
-                right 220ms ease,
-                bottom 220ms ease,
-                left 220ms ease;
+    transition: opacity 220ms ease, top 220ms ease, right 220ms ease, bottom 220ms ease, left 220ms ease;
   }
 
   &:after{
@@ -55,7 +51,7 @@ triangle(side, color) {
 .tooltippy--right{
   &:before, &:after{
     top: 50%;
-    transform: translateY(-50%)
+    transform: translateY(-50%);
   }
 }
 
