@@ -15,10 +15,10 @@
   "scripts": {
     "clean": "rm -rf dist",
     "build-expanded": "stylus src/themes/${THEME}/index.styl --out dist/tooltippy--${THEME}.css",
-    "build-debug": "stylus src/themes/${THEME}/index.styl --out dist/tooltippy--${THEME}.debug.css --sourcemap",
+    "build-debug": "stylus src/themes/${THEME}/index.styl --out dist/tooltippy--${THEME}.debug.css --sourcemap-inline",
     "build-min": "stylus src/themes/${THEME}/index.styl --out dist/tooltippy--${THEME}.min.css --compress",
     "prefixify-expanded": "postcss dist/tooltippy--${THEME}.css -u autoprefixer -r --no-map",
-    "prefixify-debug": "postcss dist/tooltippy--${THEME}.debug.css -u autoprefixer -r --no-map",
+    "prefixify-debug": "postcss dist/tooltippy--${THEME}.debug.css -u autoprefixer -r",
     "prefixify-min": "postcss dist/tooltippy--${THEME}.min.css -u autoprefixer -r --no-map",
     "build-all": "npm run build-min && npm run build-expanded && npm run build-debug",
     "postbuild-all": "npm run prefixify-expanded && npm run prefixify-min && npm run prefixify-debug",
