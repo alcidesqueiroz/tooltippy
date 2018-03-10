@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500");
 .tooltippy:before,
 .tooltippy:after {
+  opacity: 0;
+  pointer-events: none;
   z-index: 1;
   transition: opacity 220ms ease, top 220ms ease, right 220ms ease, bottom 220ms ease, left 220ms ease;
 }
@@ -18,14 +19,16 @@
 .tooltippy--top:after,
 .tooltippy--bottom:after {
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 .tooltippy--left:before,
 .tooltippy--right:before,
 .tooltippy--left:after,
 .tooltippy--right:after {
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .tooltippy--top:before,
 .tooltippy--top:after {
@@ -41,7 +44,7 @@
   border-style: solid;
   border-bottom-width: 0;
   border-color: transparent;
-  border-top-color: #000;
+  border-top-color: #111;
   margin-bottom: -1rem;
 }
 .tooltippy--top:hover:before,
@@ -62,7 +65,7 @@
   border-style: solid;
   border-left-width: 0;
   border-color: transparent;
-  border-right-color: #000;
+  border-right-color: #111;
   margin-left: -1rem;
 }
 .tooltippy--right:hover:before,
@@ -83,7 +86,7 @@
   border-style: solid;
   border-top-width: 0;
   border-color: transparent;
-  border-bottom-color: #000;
+  border-bottom-color: #111;
   margin-top: -1rem;
 }
 .tooltippy--bottom:hover:before,
@@ -104,25 +107,19 @@
   border-style: solid;
   border-right-width: 0;
   border-color: transparent;
-  border-left-color: #000;
+  border-left-color: #111;
   margin-right: -1rem;
 }
 .tooltippy--left:hover:before,
 .tooltippy--left:hover:after {
   right: 100%;
 }
-.tooltippy:before,
-.tooltippy:after {
-  opacity: 0;
-  pointer-events: none;
-  z-index: 1;
-}
 .tooltippy:after {
   font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;
   color: #fff;
-  background-color: #000;
+  background-color: #111;
   padding: 0.7rem 1.2rem;
   font-size: 1.2rem;
   font-weight: 400;
 }
-/*# sourceMappingURL=tooltippy--biz.debug.css.map */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3NyYy90aGVtZXMvX2NvbW1vbi9pbmRleC5zdHlsIiwidG9vbHRpcHB5LS1iaXouZGVidWcuY3NzIiwiLi4vc3JjL3RoZW1lcy9iaXovaW5kZXguc3R5bCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFxQkU7O0VBQ0UsV0FBQTtFQUNBLHFCQUFBO0VBQ0EsV0FBQTtFQUNBLHFHQUFBO0NDbkJIO0FEMEJDO0VBQ0UsOEJBQUE7RUFDQSxtQkFBQTtFQUNBLG9CQUFBO0NDeEJIO0FENEJHOztFQUNFLFdBQUE7Q0N6Qkw7QURnQ0M7Ozs7RUFDRSxVQUFBO0VBQ0Esb0NBQUE7VUFBQSw0QkFBQTtDQzNCSDtBRGlDQzs7OztFQUNFLFNBQUE7RUFDQSxvQ0FBQTtVQUFBLDRCQUFBO0NDNUJIO0FEaUNDOztFQUNFLDBCQUFBO0NDOUJIO0FEaUNDO0VBMURBLFlBQUE7RUFDQSxlQUFBO0VBQ0EsbUJBQUE7RUFDQSxZQUFBO0VBQ0EsYUFBQTtFQUNBLG1CQUFBO0VBQ0Esb0JBQUE7RUFDNEIsdUJBQUE7RUFDNUIsMEJBQUE7RUFDYSx1QkFBQTtFQW1EWCxxQkFBQTtDQ3RCSDtBRDBCRzs7RUFDRSxhQUFBO0NDdkJMO0FENkJDOztFQUNFLHdCQUFBO0NDMUJIO0FENkJDO0VBM0VBLFlBQUE7RUFDQSxlQUFBO0VBQ0EsbUJBQUE7RUFDQSxZQUFBO0VBQ0EsYUFBQTtFQUNBLG1CQUFBO0VBQ0Esb0JBQUE7RUFDNEIscUJBQUE7RUFDNUIsMEJBQUE7RUFDYSx5QkFBQTtFQW9FWCxtQkFBQTtDQ2xCSDtBRHNCRzs7RUFDRSxXQUFBO0NDbkJMO0FEeUJDOztFQUNFLHVCQUFBO0NDdEJIO0FEeUJDO0VBNUZBLFlBQUE7RUFDQSxlQUFBO0VBQ0EsbUJBQUE7RUFDQSxZQUFBO0VBQ0EsYUFBQTtFQUNBLG1CQUFBO0VBQ0Esb0JBQUE7RUFDNEIsb0JBQUE7RUFDNUIsMEJBQUE7RUFDYSwwQkFBQTtFQXFGWCxrQkFBQTtDQ2RIO0FEa0JHOztFQUNFLFVBQUE7Q0NmTDtBRHFCQzs7RUFDRSx5QkFBQTtDQ2xCSDtBRHFCQztFQTdHQSxZQUFBO0VBQ0EsZUFBQTtFQUNBLG1CQUFBO0VBQ0EsWUFBQTtFQUNBLGFBQUE7RUFDQSxtQkFBQTtFQUNBLG9CQUFBO0VBQzRCLHNCQUFBO0VBQzVCLDBCQUFBO0VBQ2Esd0JBQUE7RUFzR1gsb0JBQUE7Q0NWSDtBRGNHOztFQUNFLFlBQUE7Q0NYTDtBQzVHQztFQUNFLHlEQUFBO0VBQ0EsWUFBQTtFQUNBLHVCQUFBO0VBQ0EsdUJBQUE7RUFDQSxrQkFBQTtFQUNBLGlCQUFBO0NEOEdIIiwiZmlsZSI6InRvb2x0aXBweS0tYml6LmRlYnVnLmNzcyJ9 */
