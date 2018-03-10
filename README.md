@@ -1,6 +1,6 @@
 # tooltippy [![Build status](https://travis-ci.org/alcidesqueiroz/tooltippy.svg?branch=master)](https://travis-ci.org/alcidesqueiroz/tooltippy)
 
-> 💬 Graceful CSS-only tooltips in under 1kb.
+> 💬 Graceful CSS-only tooltips in under 1kb gzipped.
 
 ![Tooltippy is sexy!](https://gist.githubusercontent.com/alcidesqueiroz/c3d6c6edc559194bc37a2c464a21768d/raw/8d8b01f62703f8cb7442e369ef805965c1efe77e/tooltippy.png)
 
