@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 test_complete_build() {
   npm run build
