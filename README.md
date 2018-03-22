@@ -71,9 +71,11 @@ $ yarn add tooltippy
 
 Alcides Queiroz Aguiar
 
-- E-mail: alcidesqueiroz <at> gmail
-- Stack Overflow: [http://is.gd/aqanso](http://stackoverflow.com/users/1295666/alcides-queiroz-aguiar)
+- Twitter: [alcidesqueiroz](https://twitter.com/alcidesqueiroz)
 - Medium: [@alcidesqueiroz](https://medium.com/@alcidesqueiroz)
+- Stack Overflow: [http://is.gd/aqanso](http://stackoverflow.com/users/1295666/alcides-queiroz-aguiar)
+- E-mail: alcidesqueiroz <at> gmail
+
 
 ## License
 
