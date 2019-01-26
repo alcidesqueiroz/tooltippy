@@ -27,7 +27,7 @@ $ yarn add tooltippy
 6. **Optional step**: If you want, you can import the suggested font-face for the theme you have chosen. All theme stylesheets have font-stacks with similar web-safe font-families as fallback.
 
 
-```
+```html
 <div class="tooltippy tooltippy--top" data-tooltippy="Hodor... Hodor?? Hodor!">
   <img src="hodor.jpg" />
 </div>
@@ -71,10 +71,12 @@ $ yarn add tooltippy
 
 Alcides Queiroz Aguiar
 
-- Twitter: [alcidesqueiroz](https://twitter.com/alcidesqueiroz)
+- Website: [www.alcidesqueiroz.com](https://www.alcidesqueiroz.com)
 - Medium: [@alcidesqueiroz](https://medium.com/@alcidesqueiroz)
+- Twitter: [alcidesqueiroz](https://twitter.com/alcidesqueiroz)
+- Behance [alcidesqueiroz](https://behance.net/alcidesqueiroz)
 - Stack Overflow: [http://is.gd/aqanso](http://stackoverflow.com/users/1295666/alcides-queiroz-aguiar)
-- E-mail: alcidesqueiroz <at> gmail
+- E-mail: alcidesqueiroz &lt;at&gt; gmail
 
 
 ## License
