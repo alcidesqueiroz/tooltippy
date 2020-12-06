@@ -1,6 +1,6 @@
 {
   "name": "tooltippy",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "💬 Graceful CSS-only tooltips in under 1kb gzipped.",
   "license": "MIT",
   "repository": "alcidesqueiroz/tooltippy",
@@ -36,9 +36,10 @@
     "micro"
   ],
   "devDependencies": {
-    "autoprefixer": "^8.1.0",
-    "postcss-cli": "^5.0.0",
-    "stylint": "^1.5.9",
-    "stylus": "^0.54.5"
+    "autoprefixer": "^10.0.4",
+    "postcss": "^8.1.14",
+    "postcss-cli": "^8.3.0",
+    "stylint": "^2.0.0",
+    "stylus": "^0.54.8"
   }
 }

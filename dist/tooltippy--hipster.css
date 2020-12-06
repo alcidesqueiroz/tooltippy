@@ -19,16 +19,14 @@
 .tooltippy--top:after,
 .tooltippy--bottom:after {
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 .tooltippy--left:before,
 .tooltippy--right:before,
 .tooltippy--left:after,
 .tooltippy--right:after {
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .tooltippy--top:before,
 .tooltippy--top:after {
