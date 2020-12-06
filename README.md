@@ -1,4 +1,4 @@
-# tooltippy [![Build status](https://travis-ci.org/alcidesqueiroz/tooltippy.svg?branch=master)](https://travis-ci.org/alcidesqueiroz/tooltippy)
+# tooltippy [![Build status](https://travis-ci.com/alcidesqueiroz/tooltippy.svg?branch=master)](https://travis-ci.com/alcidesqueiroz/tooltippy)
 
 > 💬 Graceful CSS-only tooltips in under 1kb gzipped.
 
@@ -8,7 +8,7 @@
 
 With npm:
 ```
-$ npm install --save tooltippy
+$ npm install tooltippy
 ```
 
 With Yarn:
