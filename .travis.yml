@@ -1,2 +1,5 @@
-install: npm i -g stylus && npm i -g postcss-cli && npm i -g autoprefixer
+language: node_js
+node_js:
+  - 12
+install: yarn global add stylus postcss-cli postcss autoprefixer
 script: "./test/test-build"

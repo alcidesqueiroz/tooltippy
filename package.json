@@ -10,7 +10,7 @@
     "url": "https://www.alcidesqueiroz.com"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=12"
   },
   "scripts": {
     "clean": "rm -rf dist",
